@@ -9,7 +9,7 @@ This Bash script provides an interactive menu to install Chromium and Firefox br
 install Chromium and Firefox in Linux
 
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/Ptechgithub/linux/main/browser.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/cjmahdi2/linux/main/browser.sh)
 ```
 ## Prerequisite: 
 - docker( auto install)
@@ -18,21 +18,21 @@ bash <(curl -fsSL https://raw.githubusercontent.com/Ptechgithub/linux/main/brows
 Open Chromium:
 
 ``
-http://serverIP:3000
+http://serverIP:21913
 ``
 
 ``
-https://serverIP:3001
+https://serverIP:21914
 ``
 
 Open Firefox:
 
 ``
-http://serverIP:4000
+http://serverIP:21915
 ``
 
 ``
-https://serverIP:4001
+https://serverIP:21916
 ``
 
 ![1](https://raw.githubusercontent.com/Ptechgithub/linux/main/media/1.jpg)
