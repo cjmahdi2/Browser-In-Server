@@ -31,8 +31,8 @@ install_chromium() {
             -e CUSTOM_USER=$USERNAME \
             -e PASSWORD=$PASSWORD \
             -e CHROME_CLI=https://www.youtube.com/@IR_TECH/ `#optional` \
-            -p 3000:3000 \
-            -p 3001:3001 \
+            -p 21913:21913 \
+            -p 21914:21914 \
             -v /path/to/config:/config \
             --shm-size="1gb" \
             --restart unless-stopped \
@@ -41,7 +41,7 @@ install_chromium() {
         echo "Chromium installed successfully."
         IP=$(hostname -I | awk '{print $1}')
         echo " "
-        echo "Use browser with http://$IP:3000"
+        echo "Use browser with http://$IP:21913"
     fi
 }
 
@@ -74,8 +74,8 @@ install_firefox() {
             -e TZ=Etc/UTC \
             -e CUSTOM_USER=$USERNAME \
             -e PASSWORD=$PASSWORD \
-            -p 4000:3000 \
-            -p 4001:3001 \
+            -p 21915:21913 \
+            -p 21916:21914 \
             -v /path/to/config:/config \
             --shm-size="1gb" \
             --restart unless-stopped \
@@ -84,7 +84,7 @@ install_firefox() {
         echo "Firefox installed successfully."
         IP=$(hostname -I | awk '{print $1}')
         echo " "
-        echo "Use browser with http://$IP:4000"
+        echo "Use browser with http://$IP:21915"
     fi
 }
 
